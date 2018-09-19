@@ -12,7 +12,9 @@
 	<link type="text/css" rel="stylesheet" href="styles/sunlight.<?js= this.navOptions.syntaxTheme ?>.css">
 
 	<link type="text/css" rel="stylesheet" href="styles/site.<?js= this.navOptions.theme ?>.css">
-
+	<?js if (this.navOptions.analytics && this.navOptions.analytics.code) { ?>
+  	<script><?js= this.navOptions.analytics.code ?></script>
+  	<?js } ?>
 </head>
 
 <body>
